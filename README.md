@@ -20,15 +20,5 @@ Cada archivo de ejercicio contiene la lógica correspondiente, la cual es llamad
 
 ---
 
-## ▶️ Ejecución del proyecto
 
-### Requisitos
-- Tener instalado **.NET SDK**
-- Usar **Visual Studio Code** u otro editor compatible con C#
-
-### Pasos para ejecutar
-1. Abrir la carpeta del proyecto en Visual Studio Code.
-2. Abrir la terminal integrada.
-3. Ubicarse en la carpeta donde se encuentra el archivo `.csproj`.
-4. Ejecutar el comando:
 
