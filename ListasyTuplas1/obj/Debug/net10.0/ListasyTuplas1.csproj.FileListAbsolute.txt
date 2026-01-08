@@ -1,0 +1,14 @@
+C:\Users\David\Documents\ProyectosC#\ListasyTuplas1\bin\Debug\net10.0\ListasyTuplas1.exe
+C:\Users\David\Documents\ProyectosC#\ListasyTuplas1\bin\Debug\net10.0\ListasyTuplas1.deps.json
+C:\Users\David\Documents\ProyectosC#\ListasyTuplas1\bin\Debug\net10.0\ListasyTuplas1.runtimeconfig.json
+C:\Users\David\Documents\ProyectosC#\ListasyTuplas1\bin\Debug\net10.0\ListasyTuplas1.dll
+C:\Users\David\Documents\ProyectosC#\ListasyTuplas1\bin\Debug\net10.0\ListasyTuplas1.pdb
+C:\Users\David\Documents\ProyectosC#\ListasyTuplas1\obj\Debug\net10.0\ListasyTuplas1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David\Documents\ProyectosC#\ListasyTuplas1\obj\Debug\net10.0\ListasyTuplas1.AssemblyInfoInputs.cache
+C:\Users\David\Documents\ProyectosC#\ListasyTuplas1\obj\Debug\net10.0\ListasyTuplas1.AssemblyInfo.cs
+C:\Users\David\Documents\ProyectosC#\ListasyTuplas1\obj\Debug\net10.0\ListasyTuplas1.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\ProyectosC#\ListasyTuplas1\obj\Debug\net10.0\ListasyTuplas1.dll
+C:\Users\David\Documents\ProyectosC#\ListasyTuplas1\obj\Debug\net10.0\refint\ListasyTuplas1.dll
+C:\Users\David\Documents\ProyectosC#\ListasyTuplas1\obj\Debug\net10.0\ListasyTuplas1.pdb
+C:\Users\David\Documents\ProyectosC#\ListasyTuplas1\obj\Debug\net10.0\ListasyTuplas1.genruntimeconfig.cache
+C:\Users\David\Documents\ProyectosC#\ListasyTuplas1\obj\Debug\net10.0\ref\ListasyTuplas1.dll
