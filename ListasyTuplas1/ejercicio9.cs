@@ -1,40 +1,38 @@
 //Ejercicio 9
-//Escribir un programa usando listas que pida al usuario una palabra y muestre por pantalla el número de veces que contiene cada vocal.
+//Escribir un programa que pida al usuario una palabra y muestre por pantalla el número de veces que contiene cada vocal.
 
-using System;// Importa el espacio de nombres System para funcionalidades básicas
-using System.Collections.Generic;// Importa el espacio de nombres System.Collections.Generic para utilizar listas genéricas
+using System; // Permite usar funcionalidades básicas de C#, como la consola
+using System.Collections.Generic; // Permite usar listas genéricas en C#
 
-public class Ejercicio9// Define la clase del ejercicio
+public class Ejercicio9 // Define la clase del ejercicio
 {
-    public static void Ejecutar()// Método que será llamado desde Program.cs
+    public static void Ejecutar() // Método principal de la clase que se ejecuta desde Program.cs
     {
-        Console.WriteLine("Introduce una palabra:");// Pide al usuario que introduzca una palabra
-        string palabra = Console.ReadLine();// Lee la palabra desde la consola
+        Console.WriteLine("Introduce una palabra:"); // Solicita al usuario que ingrese una palabra
+        string palabra = Console.ReadLine().ToLower(); // Lee la palabra ingresada y la convierte a minúsculas
 
-        // Crear un diccionario para contar las vocales
-        Dictionary<char, int> contadorVocales = new Dictionary<char, int>
-        {
-            {'a', 0},// Inicializa el contador de la vocal 'a'
-            {'e', 0},// Inicializa el contador de la vocal 'e'
-            {'i', 0},// Inicializa el contador de la vocal 'i'
-            {'o', 0},// Inicializa el contador de la vocal 'o'
-            {'u', 0}// Inicializa el contador de la vocal 'u'
-        };
+        // Crear una lista con las vocales para comparar con las letras de la palabra
+        List<char> vocales = new List<char> { 'a', 'e', 'i', 'o', 'u' };
 
-        // Contar las vocales en la palabra
-        foreach (char letra in palabra.ToLower())
+        // Crear una lista de contadores inicializados en 0, uno por cada vocal
+        List<int> contador = new List<int> { 0, 0, 0, 0, 0 };
+
+        // Recorrer cada letra de la palabra
+        foreach (char letra in palabra)
         {
-            if (contadorVocales.ContainsKey(letra))// Verifica si la letra es una vocal
+            int index = vocales.IndexOf(letra); // Buscar si la letra es una vocal y obtener su posición en la lista
+            if (index != -1) // Si la letra es una vocal (IndexOf devuelve -1 si no la encuentra)
             {
-                contadorVocales[letra]++;// Incrementa el contador de la vocal correspondiente
+                contador[index]++; // Incrementa el contador correspondiente a esa vocal
             }
         }
 
-        // Mostrar el resultado
-        Console.WriteLine("Número de veces que contiene cada vocal:");// Muestra el encabezado del resultado
-        foreach (var par in contadorVocales)// Itera a través de cada par clave-valor en el diccionario
+        // Mostrar en la consola cuántas veces aparece cada vocal
+        Console.WriteLine("Número de veces que contiene cada vocal:");
+        for (int i = 0; i < vocales.Count; i++) // Recorrer cada vocal en la lista
         {
-            Console.WriteLine($"{par.Key}: {par.Value}");// Muestra la vocal y su contador
+            Console.WriteLine($"{vocales[i]}: {contador[i]}"); // Mostrar la vocal y su contador
         }
     }
-}// Fin de la clase Ejercicio9
+}
+
